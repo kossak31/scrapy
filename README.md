@@ -32,3 +32,7 @@ scrapy runspider myspider.py -o peppe8o.json
 ```
 urls = ['http://www.example.com/page/' + str(i) for i in range(1, 51)]
 ```
+### change USER-AGENT in settings.py
+```
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.>
+```
