@@ -5,6 +5,22 @@ cat mycsv.csv | cut -d ',' -f3
 csvtool format '%(2)\n' file.csv 
 ```
 
+## How to join two CSV files?
+```bash
+csjoin fileone.csv filetwo.csv > joincsv.csv
+csvjoin -c email id_email.csv email_name.csv
+csvjoin -c 2,1 id_email.csv email_name.csv
+```
+
+
+## Convert CSV to JSON
+```bash
+sudo apt install jq
+sudo npm i -g csvtojson
+csvtojson filecsv.csv > filejson.json
+cssvtojson filecsv.csv | jq
+```
+
 ## remove first row
 ```bash
 csvtool drop 1 file.csv > delete-first-row.csv 
